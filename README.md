@@ -1,6 +1,6 @@
 # Aplicativo de Projeto ODS
 
-Este é um simples aplicativo de Registro e Login e Cadastro de Projeto desenvolvido em Java e MySQL por Andrew Souza @nszandrew.
+Este é um simples aplicativo de Registro e Login e Cadastro de Projeto desenvolvido em Java e MySQL.
 
 ## Instalação
 
