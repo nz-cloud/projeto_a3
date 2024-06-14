@@ -21,10 +21,6 @@ Este é um simples aplicativo de Registro e Login e Cadastro de Projeto desenvol
 
 Esse é um projeto para entrega na faculdade, não sou um desenvolvedor profissional.
 
-## Autor
-
-Este projeto foi desenvolvido por @nszandrew para um projeto da faculdade.
-
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT].
