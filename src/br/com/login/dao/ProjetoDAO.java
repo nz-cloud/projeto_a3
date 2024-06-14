@@ -39,7 +39,7 @@ public class ProjetoDAO {
             int contador = 0;
             while (rs.next()) {
                 String ods = rs.getString("ods");
-                String dataCriacao = rs.getString("data");
+                String dataCriacao = rs.getString("data_criacao");
                 boolean status = rs.getBoolean("tipo");
                 String descricao = rs.getString("descricao");
                 info[contador++] = new InfoProjeto(ods, dataCriacao, status, descricao); 
@@ -51,7 +51,7 @@ public class ProjetoDAO {
         }    
     } 
         public void alterarDados(String ods, String status, String descricao, String id){
-        String sql = "UPDATE tb_projeto SET ods = ?, status_projeto = ?, descricao = ? WHERE id_projeto = ?";
+        String sql = "UPDATE tb_projeto SET ods = ?, status_projeto = ?, descricao = ? WHERE id = ?";
         try {
             Connection conexao = new Conexao().getConnection();
             PreparedStatement ps = conexao.prepareStatement(sql);
@@ -67,7 +67,7 @@ public class ProjetoDAO {
         }
     }
     public void deletarDados(String id){
-        String sql = "DELETE FROM tb_projeto WHERE id_projeto = ?";
+        String sql = "DELETE FROM tb_projeto WHERE id = ?";
         try {
             Connection conexao = new Conexao().getConnection();
             PreparedStatement ps = conexao.prepareStatement(sql);
